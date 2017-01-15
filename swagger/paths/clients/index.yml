@@ -1,0 +1,16 @@
+get:
+  responses:
+    200:
+      description: "Get all clients"
+      schema:
+        type: array
+        items:
+          $ref: "#/definitions/client"
+    401:
+      description: "unauthorised"
+    default:
+      description: "generic error response"
+      schema:
+        $ref: "#/definitions/errorMessage"
+  tags:
+    - clients

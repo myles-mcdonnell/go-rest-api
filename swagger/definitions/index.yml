@@ -1,0 +1,4 @@
+errorMessage:
+  $ref: ./errorMessage.yml
+client:
+  $ref: ./client.yml

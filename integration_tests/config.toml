@@ -1,0 +1,3 @@
+[service]
+apihost="localhost"
+apiport=4004

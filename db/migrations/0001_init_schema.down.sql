@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS client CASCADE;
+
+DROP SEQUENCE IF EXISTS client_id_seq;

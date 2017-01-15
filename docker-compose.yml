@@ -1,0 +1,21 @@
+version: '2'
+services:
+  api:
+    image: go-rest-api
+    container_name: go-rest-api
+    ports:
+      - "4004:4004"
+    depends_on:
+      - postgres
+    links:
+      - postgres:localhost
+
+  postgres:
+    image: postgres:9.4
+    container_name: go-rest-api-postgres
+    volumes:
+    - ./db:/docker-entrypoint-initdb.d
+    ports:
+    - "25432:5432"
+
+

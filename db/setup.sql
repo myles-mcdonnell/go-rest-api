@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS gorestapi;
+
+DROP ROLE IF EXISTS gorestapi;
+
+CREATE ROLE gorestapi LOGIN
+  ENCRYPTED PASSWORD 'gorestapi'
+  SUPERUSER INHERIT CREATEDB CREATEROLE REPLICATION;
+
+CREATE DATABASE gorestapi
+  WITH OWNER = gorestapi
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'en_US.utf8'
+       LC_CTYPE = 'en_US.utf8'
+       CONNECTION LIMIT = -1;

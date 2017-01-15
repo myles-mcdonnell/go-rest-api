@@ -1,0 +1,18 @@
+[database]
+host = "localhost"
+port = 5432
+name = "gorestapi"
+user = "gorestapi"
+password = "gorestapi"
+maxopenconnections = 25
+maxidleconnections = 10
+disablesslmode = true
+
+[service]
+enablecors = true
+outputconfig = true
+
+[log]
+outputdebug = true
+outputjson = true
+outputpretty = true

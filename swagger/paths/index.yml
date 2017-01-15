@@ -1,0 +1,5 @@
+/healthcheck:
+  $ref: ./healthcheck/index.yml
+/clients:
+  $ref: ./clients/index.yml
+
